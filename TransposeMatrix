@@ -1,0 +1,26 @@
+#Method1
+mat = [[1,2],  
+      [4,5],  
+     [7,8]]  
+  
+res = [[0,0,0],  
+             [0,0,0]]  
+  
+# iterate through rows  
+for i in range(len(mat)):  
+   for j in range(len(mat[0])):  
+       res[j][i] = mat[i][j]  
+  
+for r in res:  
+   print(r)  
+   
+   
+   
+#Method2   
+import numpy as np
+
+mat = np.array([[3, 6, 9], [5, -10, 15], [4,8,12]])
+trans = mat.transpose()
+
+print(trans)
+   
